@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+h1{
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+h2{
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+strong{
+    color: #6AB5AE;
+    border-bottom: 2px solid #fff;
+}
+
+/*HEADER*/
+.header{
+    background-image: linear-gradient(to right, #000406, #1F343E);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 0 8%;
+    min-height: 100px;
+    min-width: 400px;
+}
+.logo{
+    padding: 20px 0px;
+}
+
+#logo-header{
+    width: 200px;
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #fff;
+    transition: 0.6s;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover{
+    color: aquamarine;
+    font-weight: 500;
+    transition: 0.6s;
+    border-bottom: 2px solid #6AB5AE;
+}
+
+/*CAPA*/
+.capa{
+    height: auto;
+    padding: 30px 8%;
+    background-image: linear-gradient(to right, #000406, #1F343E);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 400px;
+}
+
+.paragrafo-capa{
+    max-width: 560px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.imagem-capa{
+    max-width: 650px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#imagem-capa-alunos{
+    max-width: 100%;
+}
+
+
+/*SOBRE A FEIRA*/
+.sobre-feira{
+    min-height: 450px;
+    min-width: 400px;
+    padding: 30px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.organizacao{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagem-sobre{
+    max-width: 620px;
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#imagem-feira{
+    width: 80%;
+}
+
+.paragrafo-sobre{
+    max-width: 620px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*Edição*/
+.edicao{
+    min-height: 700px;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #000406, #1F343E);
+    color: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.paragrafo-edicao{
+    max-width: 620px;
+    min-width: 400px;
+
+}
+.informacoes{
+    margin: 30px 0;
+}
+
+#horizontal{
+    display: flex;
+    align-items: center;  
+}
+
+#horizontal span{
+    color: #6AB5AE;
+}
+
+#horizontal h2{
+    margin: 10px 20px;
+}
+
+.informacoes p{
+    margin: 0px 45px;
+    font-size: 0.8rem;
+}
+
+#input{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.paragrafo-edicao input{
+    background-color: #6AB5AE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.paragrafo-edicao input:hover{
+    background-color: aquamarine;
+}
+
+.imagem-edicao{
+    max-width: 620px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#trofeu{
+    max-width: 60%;
+}
