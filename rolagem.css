@@ -1,0 +1,21 @@
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: 2px solid #c6c6c6;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+#scrollBtn:hover {
+    background-color:#7fffd4;
+}
+
+#seta-cima{
+    max-width: 15px;
+}

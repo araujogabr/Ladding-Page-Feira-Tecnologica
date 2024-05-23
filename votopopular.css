@@ -1,0 +1,54 @@
+.sistemavotacao{
+    height: 500px;
+    width: 100%;
+    padding: 30px 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+}
+
+.sistemavotacao h1{
+    color: #6AB5AE;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.sistemavotacao p{
+    color:  #1F343E;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.sistemavotacao div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sistemavotacao img{
+    width: 50%;
+}
+
+
+@media (max-width: 767px) {
+
+    .sistemavotacao{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .sistemavotacao div{
+        width: 100%;
+        height: auto;
+    }
+
+    .sistemavotacao img{
+        width: 70%;
+    }
+}

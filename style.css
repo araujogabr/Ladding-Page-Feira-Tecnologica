@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
     margin: 0;
     border: 0;
@@ -8,82 +13,122 @@
     font-family: Poppins;
 }
 h1{
-    margin: 30px 0;
-    font-size: 2.5rem;
+    margin: 0 0 30px 0;
+    font-size: 1.75rem;
 }
 
 h2{
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     font-size: 1.3rem;
 }
 
 p{
     font-size: 1rem;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 }
 
 strong{
     color: #6AB5AE;
-    border-bottom: 2px solid #fff;
+}
+
+ion-icon {
+    font-size: 20px;
+    color: #6AB5AE;
+  }
+
+/*CONTAINER*/
+.container{
+    max-width: 100vw;
+    margin: auto;
 }
 
 /*HEADER*/
-.header{
+header{
     background-image: linear-gradient(to right, #000406, #1F343E);
+}
+
+.nav-bar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100px;
-    padding: 0 8%;
-    min-height: 100px;
-    min-width: 400px;
-}
-.logo{
-    padding: 20px 0px;
+    padding: 30px 8%;
 }
 
 #logo-header{
     width: 200px;
 }
-nav ul{
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
-nav ul li{
-    display: inline-block;
+.nav-list ul ul{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
 }
 
-nav ul li a{
-    padding: 10px 20px;
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
     text-decoration: none;
-    font-size: 19px;
+    font-size: 1.15rem;
     color: #fff;
-    transition: 0.6s;
-    font-size: 1.1rem;
+    font-weight: 400;
 }
 
-nav ul li a:hover{
-    color: aquamarine;
-    font-weight: 500;
-    transition: 0.6s;
-    border-bottom: 2px solid #6AB5AE;
+.nav-link:hover{
+    color: #5ce1d4;
+    border-bottom: 2px solid #5ce1d4;
 }
+
+
+.login-button button{ 
+    border: none; 
+    background-color:#6AB5AE;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button button:hover{ 
+    background-color:#5ce1d4; 
+} 
+
+
+.mobile-menu-icon{ 
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 
 /*CAPA*/
 .capa{
-    height: auto;
-    padding: 30px 8%;
+    width: 100%;
+    padding: 10px 8%;
     background-image: linear-gradient(to right, #000406, #1F343E);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 400px;
 }
 
 .paragrafo-capa{
-    max-width: 560px;
-    min-width: 400px;
+    width: 47%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,8 +137,7 @@ nav ul li a:hover{
 }
 
 .imagem-capa{
-    max-width: 650px;
-    min-width: 400px;
+    width: 47%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -106,15 +150,15 @@ nav ul li a:hover{
 
 /*SOBRE A FEIRA*/
 .sobre-feira{
-    min-height: 450px;
-    min-width: 400px;
+    height: auto;
+    width: 100%;
     padding: 30px 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
 }
-.organizacao{
+.organizar{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -122,11 +166,11 @@ nav ul li a:hover{
 }
 
 .imagem-sobre{
-    max-width: 620px;
-    min-width: 400px;
+    width: 50%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:center;
+    align-items: center;
+    background-color: #fff;
 }
 
 #imagem-feira{
@@ -134,29 +178,27 @@ nav ul li a:hover{
 }
 
 .paragrafo-sobre{
-    max-width: 620px;
-    min-width: 400px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 
-/*Edição*/
+/*EDIÇAÕ 2023*/
 .edicao{
-    min-height: 700px;
+    height: 550px;
+    width: 100%;
     padding: 30px 8%;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, #000406, #1F343E);
     color: #fff;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 
 .paragrafo-edicao{
-    max-width: 620px;
-    min-width: 400px;
+    width: 50%;
 
 }
 .informacoes{
@@ -168,17 +210,13 @@ nav ul li a:hover{
     align-items: center;  
 }
 
-#horizontal span{
-    color: #6AB5AE;
-}
-
 #horizontal h2{
-    margin: 10px 20px;
+    margin: 5px 10px;
 }
 
 .informacoes p{
-    margin: 0px 45px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin: 0px;
 }
 
 #input{
@@ -186,27 +224,408 @@ nav ul li a:hover{
     justify-content: center;
     margin: 30px 0;
 }
-.paragrafo-edicao input{
+
+.informacoes button{
     background-color: #6AB5AE;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 600;
     align-self: center;
 }
-
-.paragrafo-edicao input:hover{
-    background-color: aquamarine;
+.informacoes button:hover{
+    background-color: #7fffd4;
 }
 
 .imagem-edicao{
-    max-width: 620px;
-    min-width: 400px;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #trofeu{
-    max-width: 60%;
+    max-height: 100%;
+}
+
+/*TRILHAS*/
+
+.trilhas_projetos{
+    min-height: 450px;
+    max-width: 100%;
+    padding: 30px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.trilhas{
+    width: 100%;
+    display: block;
+}
+
+.trilhas h2{
+    margin: 0px;
+}
+
+#trilhas #download{ 
+    border: 3px solid #6AB5AE; 
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #6AB5AE;
+    font-weight: 500;
+    width: 150px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+#trilhas #download:hover{ 
+    background-color:#ededed; 
+} 
+
+.nome_trilhas{
+    padding: 10PX;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(125, 124, 124, 0.5);
+}
+
+.nome_trilhas p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+#lado{
+    display: flex;
+}
+
+.conteudo {
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#esconder_ao_iniciar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.card_projeto{
+    max-width: calc(32%);
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(125, 124, 124, 0.5);
+}
+
+.texto_card_projeto{
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.texto_card_projeto h3{
+    font-size: 0.8rem;
+    color: #6AB5AE;
+}
+
+.texto_card_projeto p{
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+
+.video_card_projeto {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+  
+.video_card_projeto iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*ORGANIZAÇÃO*/
+  
+.organizacao{
+    min-height: 250px;
+    max-width: 100%;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8EAED;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.organizacao img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.img-organizacao{
+    max-width: 47%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.img-organizacao img{
+    width: 60%;
+}
+
+
+/*Mapa*/
+.mapa{
+    width: 100%;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 300px;
+}
+
+/*Rodapé*/
+.rodape{
+    width: 100%;
+    padding: 30px 8%;
+    background-image: linear-gradient(to right, #000406, #1F343E);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-align: left;
+    flex-wrap: wrap;
+    border-bottom: 15px solid #6AB5AE;
+}
+
+.rodape img{
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.logo-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.contatos-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contatos-rodape h1, h2, p{
+    margin: 5px;
+}
+
+.rodape a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+    
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{ 
+        display: block;
+    }
+
+    .mobile-menu-icon button{  
+        background-color: transparent; 
+        border: none;
+        cursor: pointer; 
+    }
+
+    .mobile-menu ul{ 
+        display: flex;
+        flex-direction: column; 
+        text-align: center; 
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{ 
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        padding:  1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{ 
+        width: 100%;
+    }
+
+    #trilhas #download{ 
+        width: 100%;
+    }
+
+    .open{
+        display: block; 
+    }
+
+    .nav-bar, .capa, .sobre-feira, .edicao, .trilhas_projetos, .organizacao, .rodape {
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 1.3rem;;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .capa{
+        flex-direction: column;
+    }
+
+    .paragrafo-capa{
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem-capa{
+        width: 100%;
+    }
+
+    .sobre-feira{
+        text-align: center;
+    }
+
+    .organizar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-sobre, .paragrafo-sobre{
+        width: 100%;
+    }
+
+    .edicao{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .edicao h1{
+        margin: 10px 0px;
+    }
+
+    .edicao p{
+        margin: 20px 0px;
+    }
+
+    .paragrafo-edicao{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .informacoes{
+        width: 90%;
+        margin: auto;
+    }
+
+    .imagem-edicao{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #trofeu{
+        width: 60%;
+    }
+
+    .card_projeto{
+        max-width: 100%;
+    }
+
+    .img-organizacao{
+        max-width: 100%;
+    }
+
+    .img-organizacao img{
+        width: 70%;
+    }
+
+    .logo-rodape{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-rodape img{
+        width: 70%;
+        padding: 20px 0px;
+    }
+
+    .logo-rodape p{
+        font-size: 0.8rem;
+    }
+
+    .contatos-rodape h2{
+        align-self: center;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    .contatos-rodape{
+        width: 100%;
+    }
+
+    .contatos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

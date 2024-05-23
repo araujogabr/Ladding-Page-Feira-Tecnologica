@@ -5,23 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Feira Tecnológica</title>
+    <title>Feira de Tecnologia</title>
+    <link rel="icon" href="img/logo_feira-01.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
+    <link rel="stylesheet" href="rolagem.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="clear.js"></script>
+    <script src="trilhas.js"></script>
+    <script src="rolagem.js"></script>
+    <script src="menu-mobile.js"></script>
+    <script src="calendar.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img id="logo-header" src="img/logo_fmm_escuro.png" alt="">
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="">Sobre a Feira</a></li>
-                <li><a href="">Trilhas</a></li>
-                <li><a href="">Organização</a></li>
-            </ul>
-        </nav>
-    </div>
+    <div class="container">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="https://www.fundacaomatiasmachline.org.br/" target="_blank"><img id="logo-header" src="img/logo_fmm_escuro.png" alt=""></a>
+                </div>
+    
+                <div class="nav-list"> 
+                    <ul>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre a Feira</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trilhas">Trilhas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#organizacao">Organização</a></li>
+                    </ul>    
+                </div>
+
+                <div class="login-button">
+                    <a title="Vote no melhor projeto da Feira" href="votopopular.html"><button>Voto Popular</button></a>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="./img/icons/menu_white_36dp.svg"></button>
+                </div>
+    
+            </nav> 
+    
+            <div class="mobile-menu">  
+                <ul> 
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre a Feira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trilhas">Trilhas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organizacao">Organização</a></li>
+                </ul> 
+
+                <div class="login-button">
+                    
+                    <a title="Vote no melhor projeto da Feira" href="votopopular.html"><button>Voto Popular</button></a>
+                </div>
+            </div>
+           
+            </div>
+        </header>
 
     <div class="capa">
         <div class="paragrafo-capa">
@@ -34,16 +70,19 @@
         </div>
     </div>
 
-    <div class="sobre-feira">
+    <div id="sobre" class="sobre-feira">
         <h1>Um evento <strong>para toda a comunidade</strong></h1>
-        <div class="organizacao">
+        <div class="organizar">
             <div class="imagem-sobre">
                 <img id="imagem-feira" src="img/logo_feira-fundoclaro.png" alt="">
             </div>
 
             <div class="paragrafo-sobre">
-                <h2>Lorem Ipsum is simply dummy</strong></h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+                <p>
+                    A Feira de Tecnologia e Inovação da Fundação Matias Machline é um evento aberto, sem fins lucrativos, onde alunos Formandos dos cursos de Nível Médio em Técnico em Mecatrônica, Eletrônica e Informática, 
+                    apresentam o que há de mais inovador nas suas respectivas áreas, trazendo projetos revolucionários e ideias incríveis. Seja você um investidor, empreendedor ou simplesmente apaixonado por tecnologia, essa feira é imperdível. 
+                </p>
+                <h2><i>O Futuro é AGORA</i></h2>
             </div>
         </div>
     </div>
@@ -51,40 +90,508 @@
     <div class="edicao">
         <div class="paragrafo-edicao">
             <h1>Edição 2023</h1>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum.</p>
+                <p>Este ano, estamos preparados para levar a experiência a um nível totalmente novo. A Feira Tecnológica de 2023 promete surpreender e encantar a todos os participantes, sejam eles entusiastas da tecnologia, investidores ou empreendedores em busca das próximas grandes oportunidades.</p>
             <div class="informacoes">
                 <div id="horizontal">
-                    <span class="material-symbols-outlined">
-                        calendar_month
-                        </span>
+                    <ion-icon name="calendar-number-outline"></ion-icon>
                     <h2>30 de junho</h2>
                 </div>
 
                 <div id="horizontal">
-                    <span class="material-symbols-outlined">
-                        schedule
-                        </span>
-                    <h2>09:00 às 18:00</h2>
+                    <ion-icon name="time-outline"></ion-icon>
+                    <h2>10:00 a 18:00</h2>
                 </div>
-
+                <div id="esquerdo">
                 <div id="horizontal">
-                    <span class="material-symbols-outlined">
-                        location_on
-                        </span>
+                    <ion-icon name="location-outline"></ion-icon>
                         <div>
                     <h2>Fundação Matias Machline</h2>
                     </div>
                 </div>
                 <p>Endereço: Av. Ministro Mário Andreazza, n. 916 - Distrito Industrial - Manaus (AM) | CEP: 69075-830 | CNPJ: 15.769.292/0001-07</p>
+                </div>
+
+                <div id="input">
+                    <button onclick="addEventToCalendar()">Adicionar evento à agenda</button>
+                </div>
             </div>
-            <div id="input">
-                <input type="submit" value="Agendar no calendário">
-            </div>
+            
         </div>
 
         <div class="imagem-edicao">
             <img id="trofeu" src="img/trofeu-01-01.png" alt="">
         </div>
     </div>
+
+    <div id="trilhas" class="trilhas_projetos">
+        <h1>Trilhas e <strong>Projetos</strong></h1>
+        <a href="Livreto Digital Feira FMM.pdf" download title="Livro de Projetos da Feira"><button id="download">Baixar Livreto</button></a>
+        <div class="trilhas">
+            <ul>
+                <!--Trilha 1-->
+                <div class="nome_trilhas">
+                    <li onclick="toggleLista('conteudo1')"><h2>Trilha 1: Fontes renováveis e Cidades Inteligentes (29)</h2><i id="seta-conteudo1" class="fas fa-chevron-down seta"></i></li>
+                    <p>Explora soluções sustentáveis e tecnologias avançadas aplicadas ao ambiente urbano.</p>
+                </div>
+                <div id="conteudo1" class="conteudo">
+                    <div id="esconder_ao_iniciar">
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Projeto UPET</h3>
+                                <p>Software para proteção e resgate de animais domésticos em situação de vulnerabilidade.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/qJKJzhhleQQ" title="Projeto UPET" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Building My Place</h3>
+                                <p>Software de divulgação de projetos de extensão universitários.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="922" height="530" src="https://www.youtube.com/embed/zk0rBRwBmAI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>SAMPET</h3>
+                                <p>Sistema de alimentação e monitoramento de PETs.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="922" height="530" src="https://www.youtube.com/embed/vfhwT1nTl1c" title="Sampet" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Security Baby</h3>
+                                <p>Dispositivo para evitar morte acidentais de crianças por esquecimento dentro de veículos, através de sinais de alertas ao condutor.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/HEjHsyLhDzM" title="Security Baby" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Urban Planting</h3>
+                                <p>Dispositivo de avaliação e monitoramento dos principais organismos 
+                                    responsáveis pelo desenvolvimento e formação de uma plantação através de uma 
+                                    estufa vertical.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/LuRC_n9bXpc" title="Urban Planting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Smart Sprinkler</h3>
+                                <p>Sistema de irrigação automatizada para destinação apropriada da água da chuva.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/ZN7zcg8bkWI" title="Smart Sprinkler" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Smart Feed</h3>
+                                <p>
+                                    Conjunto eletromecânico que forneça alimentação a animais domésticos, controlado e monitorado à distância por software.
+                                </p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/FTF9sAzV0Fw" title="Smart Feed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Fohat</h3>
+                                <p>
+                                    Circuito inteligente com os devidos sensores e atuador, comunicados com um app, para alertar possíveis acidentes elétricos.
+                                </p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="936" height="530" src="https://www.youtube.com/embed/JzHrYwZXFq4" title="Fohat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Tupã</h3>
+                                <p>
+                                    Aplicativo de auxílio turístico e cultural em Manaus.
+                                </p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/kTnCfmdVyUE" title="Tupã" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>UCanTur</h3>
+                                <p>
+                                    Aplicativo para auxiliar o turismo em Manaus através de um Guia Turístico Acessível.
+                                </p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="936" height="530" src="https://www.youtube.com/embed/DsWDN0-ISQc" title="UCanTur" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+
+
+                      </div>
+                    </div>
+
+                <!--Trilha 2-->
+                <div class="nome_trilhas">
+                    <li onclick="toggleLista('conteudo2')"><h2>Trilha 2: Soluções Industriais (11)</h2><i id="seta-conteudo2" class="fas fa-chevron-down seta"></i></li>
+                    <p>Destaca inovações e práticas avançadas para otimizar processos e aumentar a eficiência na indústria.</p>
+                </div>
+                <div id="conteudo2" class="conteudo">
+                    <div id="esconder_ao_iniciar">
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>SMASH TÚ</h3>
+                                <p>Mecanismo de corte e classificação de sementes de tucumã para reaproveitamento.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="936" height="530" src="https://www.youtube.com/embed/7xEgJovV578" title="SMASH TÚ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Tucum</h3>
+                                <p>Máquina para aquecimento, trituração e processamento do caroço do Tucumã, combinado com agentes químicos para a criação de placas similares a manufatura aditiva.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/AMuUmIdpPbY" title="Tucum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Speer</h3>
+                                <p>Partindo da tecnologia dos PLC's (Controladores Lógicos Programáveis), o modelo técnico consiste em uma esteira com sensores fotoelétricos, CLP e sistema SCADA - Aquisição de dados.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="922" height="530" src="https://www.youtube.com/embed/k_552SAMpJs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Tread Mill</h3>
+                                <p>Esteira com sensor e robô de transporte para contagem e separação de itens de hortifruti como laranja e limão.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/8c9PQZHR5rI" title="Tread Mill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <!--Trilha 3-->
+                <div class="nome_trilhas">
+                    <li onclick="toggleLista('conteudo3')"><h2>Trilha 3: Tecnologias voltadas para saúde e agricultura (23)</h2><i id="seta-conteudo3" class="fas fa-chevron-down seta"></i></li>
+                    <p>Apresenta avanços tecnológicos e soluções inovadoras para impulsionar a saúde e a produtividade agrícola.</p>
+                </div>
+                <div id="conteudo3" class="conteudo">
+                    <div id="esconder_ao_iniciar">
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Sytech</h3>
+                                <p>Dispositivos de monitoramento de raios ultravioleta.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/p73O9QjE2wc" title="Sytech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Euleracea</h3>
+                                <p>Maquinário para auxiliar na produção de um filtro de ar através das fibras do grânulo do açaí para aferição dos gases de efeito estufa.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/idGuPhd_jjI" title="Euleracea" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Economic Planet Era</h3>
+                                <p>Protótipo aeropônico para plantações verticalizadas, com monitoramento por IoT e automação com sensores e atuadores.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/DrTs77xCLLA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Pasteur Machine</h3>
+                                <p>Máquina de pasteurização que tem como produto final a produção de sorvete.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="922" height="530" src="https://www.youtube.com/embed/Ai-FhkVx3mQ" title="Pasteur Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Health Map</h3>
+                                <p>Sistema de gerenciamento de informações de Unidade de Saúde.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/PiZHPqz3KW4" title="Health Map" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Agrimanos Terra</h3>
+                                <p>Rede de sensoriamento remoto para áreas de cultivo, coletando dados universais em função da prática de agricultura familiar.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/g4T7rhBNIQQ" title="Agrimanos Terra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Agrimanos Nuvem</h3>
+                                <p>Aplicativo mobile para o gerenciamento produtivo de agricultores de pequeno porte.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/6CmcfUfZg_U" title="Agrimanos Nuvem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="card_projeto">
+                            <div class="texto_card_projeto">
+                                <h3>Guarani</h3>
+                                <p>Máquina para desaclopamento do guaraná e separação da semente das cascas do guaraná.</p>
+                            </div>
+                            <div class="video_card_projeto">
+                                <iframe width="942" height="530" src="https://www.youtube.com/embed/3ABGV8WN_OI" title="GUARANI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Trilha 4-->
+                <div class="nome_trilhas">
+                    <li onclick="toggleLista('conteudo4')"><h2>Trilha 4: Tecnologias voltadas para educação e sociedade (24)</h2><i id="seta-conteudo4" class="fas fa-chevron-down seta"></i></li>
+                    <p>Explora o uso de tecnologias para melhorar a educação e transformar positivamente a sociedade.</p>
+                </div>
+                <div id="conteudo4" class="conteudo">
+                <div id="esconder_ao_iniciar">
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Autieve</h3>
+                            <p>Software de interação para mulheres autistas, incluindo as especialistas da área.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="942" height="530" src="https://www.youtube.com/embed/aU6MeR1Vwws" title="Autieve" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>  
+                    
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>ORBIS</h3>
+                            <p>Roleta interativa para alfabetização de crianças, equipada com hardware composto por sistemas inteligentes de respostas e software.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="922" height="530" src="https://www.youtube.com/embed/GiBWXwkmSmA" title="ORBIS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>  
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>RocketClass</h3>
+                            <p>Aplicativo móvel para a realização de atividades escolares referentes a assuntos de séries inicias, juntamente com serviço web de acompanhamento individual do aluno.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="943" height="498" src="https://www.youtube.com/embed/hQ-2P4Nazuw" title="RocketClass" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div> 
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Titi Braille</h3>
+                            <p>Módulo eletrônico comunicado com aplicativo, como recurso pedagógico para alfabetização de crianças com deficiência visual.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/xLPwxA5pmd0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div> 
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Trixie</h3>
+                            <p>Software para auxiliar no tratamento fonoaudiológico nos distúrbios da fala no período de alfabetização para crianças entre 6 e 7 anos.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/gCHhMKgjH0Y" title="Trixie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div> 
+
+                                        
+                    
+                    </div>
+                </div>
+
+                <!--Trilha 5-->
+                <div class="nome_trilhas">
+                    <li onclick="toggleLista('conteudo5')"><h2>Trilha 5: Multiverso e Games (7)</h2><i id="seta-conteudo5" class="fas fa-chevron-down seta"></i></li>
+                    <p>Explora projetos de jogos e realidade virtual, considerando possibilidades do multiverso e as inovações na indústria de games.</p>
+                </div>
+                <div id="conteudo5" class="conteudo">
+                    <div id="esconder_ao_iniciar">
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Agits</h3>
+                            <p>Software para auxiliar o desenvolvimento motor da criança usando realidade aumentada.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="942" height="530" src="https://www.youtube.com/embed/-lHJYiKJTJM" title="Agits" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div> 
+
+                    <!--TR5 - Uploads daqui-->
+                    
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Projeto Catavento</h3>
+                            <p>Software com tecnologia de realidade virtual para visitação de um museu modelado para promover a museologia amazonense.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/ecSPVI-B7fg" title="Catavento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Kunumi</h3>
+                            <p>Módulo tabuleiro de jogo para crianças de 7 a 10 anos, estimulando a aprendizagem sobre o folclore brasileiro.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/8tQkASQjJ5g" title="Kunumi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Learn n' Play</h3>
+                            <p>Interface educativa para auxiliar a educação objetiva de crianças com transtornos de aprendizagem.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/hx0ZLVCV17E" title="Learn n&#39; play" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Moto Ludos</h3>
+                            <p>Dispositivo que auxilia na coordenação motora fina de crianças de 2 a 4 anos, por meio do controle de rotação e velocidade de uma roleta conforme a jogatina.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="880" height="498" src="https://www.youtube.com/embed/O4_ac9I45Ns" title="Moto Ludos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Haiwa</h3>
+                            <p>Software de astronomia indígena utilizando tecnologia de realidade virtual.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="866" height="498" src="https://www.youtube.com/embed/gDxU5dDk8Ss" title="Haiwa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                    
+                    <div class="card_projeto">
+                        <div class="texto_card_projeto">
+                            <h3>Lux Regenerationis</h3>
+                            <p>Jogo focado em exploração com o objetivo de mostrar a importância da arte.</p>
+                        </div>
+                        <div class="video_card_projeto">
+                            <iframe width="885" height="498" src="https://www.youtube.com/embed/jO1WSzITZPE" title="Lux Regenerationis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="organizacao" class="organizacao">
+        <h1>Organização</h1>
+        <div class="organizar">
+            <div class="img-organizacao">
+                <img src="img/logo-fundação-02.png" alt="">
+            </div>
+            <div class="img-organizacao">
+                <img src="img/logo-faculdade.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.400320094992!2d-59.9793014!3d-3.1342842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c048737dfc1d1%3A0xbfb1282f0d7b8f1a!2sFunda%C3%A7%C3%A3o%20Matias%20Machline!5e0!3m2!1spt-BR!2sbr!4v1686585331593!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="rodape">
+        <div class="logo-rodape">
+            <img src="img/logo_feira-01.png" alt="">
+            <p>Av. Ministro Mário Andreazza, n. 916 - Distrito Industrial - Manaus (AM) | CEP: 69075-830 | CNPJ: 15.769.292/0001-07</p>
+        </div>
+        <div class="contatos-rodape">
+            <h2>Contatos</h2>
+            <div class="contatos">
+                <div id="horizontal">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p><a href="mailto:feiradetecnologia@fmm.org.br?subject=Sobre a Feira de Tecnologia&body=Atentamente,">feiradetecnologia@fmm.org.br</a></p>
+                </div>
+
+                <div id="horizontal">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p><a href="tel:+559221292999">+55 92 2129-2999</a></p>
+                </div>
+
+                <div id="horizontal">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <p><a href="https://www.instagram.com/fmatiasmachline/" target="_blank">@fmatiasmachline</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="scrollTopFunction()" id="scrollBtn" title="Voltar ao início"><ion-icon name="arrow-up"></ion-icon></button>
+    <!--Desenvolvido por: Gabriel de Oliveira Araújo | Em 2023 | gabrielaraujo.professor@gmail.com.br-->
+</div>
 </body>
 </html>
